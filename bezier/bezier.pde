@@ -8,16 +8,16 @@ void draw()
 {
   background(128);
   float p1x = 100;
-  float p1y = 600;
+  float p1y = 400;
   
-  float p2x = 100;
-  float p2y = 100;
+  float p2x = mouseX;
+  float p2y = mouseY;
   
-  float p3x = 600;
+  float p3x = 400;
   float p3y = 100;
   
-  float p4x = 600;
-  float p4y = 600;
+  float p4x = 400;
+  float p4y = 400;
    
   beginShape();
   vertex(p1x, p1y);
