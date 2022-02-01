@@ -8,20 +8,20 @@ void draw()
 {
   background(128);
   float p1x = 100;
-  float p1y = 400;
+  float p1y = 600;
   
   float p2x = mouseX;
   float p2y = mouseY;
   
-  float p3x = 400;
+  float p3x = 600;
   float p3y = 100;
   
-  float p4x = 400;
-  float p4y = 400;
+  float p4x = 600;
+  float p4y = 600;
    
   beginShape();
   vertex(p1x, p1y);
-  for(float t = 0; t <= 1; t += 0.0001)
+  for(float t = 0; t <= 1; t += 0.01)
   {
     float ax = p1x + t*(p2x-p1x); //ponto que está na reta p2 - p1
     float ay = p1y + t*(p2y-p1y); 
