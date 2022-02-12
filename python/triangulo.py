@@ -70,8 +70,8 @@ def main():
     glEnable(GL_MULTISAMPLE)
     glEnable(GL_DEPTH_TEST)
     glClearColor(0.,0.,0.,1.)
-    gluPerspective(50,1000/1000,0.1,50.0)
-    glTranslatef(0.0,0.0,-8)
+    gluPerspective(20,1000/1000,0.1,50.0)
+    glTranslatef(0.0,0.0,-20)
     
     glutTimerFunc(50,timer,1)
     glutMainLoop()
