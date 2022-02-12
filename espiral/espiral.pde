@@ -1,27 +1,25 @@
 
-  double i=0;float r=0;int flag=0;
-  int num=1;
+
   public void setup(){
-      frameRate(100);
-      strokeWeight(7);
-      size(1920,1080);
+ 
+      size(800,800);
       //desenha plano cartesiano
-      beginhape();
-      translate(width/2, width/2);
+      beginShape();
+      translate(width/2, height/2);
       line(-width/2,0, width/2,0);
       line(0,-height/2, 0, height/2);
+      endShape();
   }
+  double i=0;float raio=0;
   public void draw(){
-      
-      
     
+      strokeWeight(3);
       float x;
       float y;
-      x=(float)(r*Math.cos(i)+100);
-      y=(float)(r*Math.sin(i)+100);
-      println(i);
+      x=(float)(raio*Math.cos(i)+width/2);
+      y=(float)(raio*Math.sin(i)+height/2);     
       point(x,y);
-      i=i+(Math.PI)/(180);
-      r=r+(40f/360f);
+      i=i+0.05;
+      raio=raio+0.08; //~~10 graus
 
   }
