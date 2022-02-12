@@ -64,13 +64,13 @@ def main():
     global a
     glutInit(sys.argv)
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH | GLUT_MULTISAMPLE)
-    glutInitWindowSize(800,600)
+    glutInitWindowSize(1000,1000)
     glutCreateWindow("Trabalho da piramide")
     glutDisplayFunc(handle_piramide)
     glEnable(GL_MULTISAMPLE)
     glEnable(GL_DEPTH_TEST)
     glClearColor(0.,0.,0.,1.)
-    gluPerspective(45,800.0/600.0,0.1,50.0)
+    gluPerspective(50,1000/1000,0.1,50.0)
     glTranslatef(0.0,0.0,-8)
     
     glutTimerFunc(50,timer,1)
